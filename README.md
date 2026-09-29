@@ -1,7 +1,5 @@
 # BERT-CLS 中文文本分类项目
 
-项目位置：`D:\bert-text-classification`。已使用本机 GPU 完成训练，可以直接预测，无需重新安装或训练。
-
 本项目对应 [HarderThenHarder/transformers_tasks 的 BERT-CLS 示例](https://github.com/HarderThenHarder/transformers_tasks/blob/main/text_classification/train.sh)。采用中文 BERT 编码文本，通过 `[CLS]` 的池化表示、Dropout 和线性分类层预测 8 个类别，微调整个模型。
 
 ## 直接使用
