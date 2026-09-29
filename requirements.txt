@@ -1,0 +1,6 @@
+transformers==4.44.2
+numpy==1.26.4
+scikit-learn==1.5.2
+matplotlib==3.9.2
+safetensors==0.4.5
+huggingface-hub==0.25.2

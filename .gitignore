@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+models/
+checkpoints/
+upstream/
+work/
+*.pyc

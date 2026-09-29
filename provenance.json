@@ -1,0 +1,18 @@
+{
+  "repository": "https://github.com/HarderThenHarder/transformers_tasks",
+  "commit": "5464a2c16b73d1c8382f40fe48682830a87dfe65",
+  "task": "text_classification/train.sh",
+  "model": {
+    "model_id": "google-bert/bert-base-chinese",
+    "revision": "8f23c25b06e129b6c986331a13d8d025a92cf0ea",
+    "source_url": "https://huggingface.co/google-bert/bert-base-chinese",
+    "preparation": "Copied exact-revision local Hugging Face cache into this project"
+  },
+  "sha256": {
+    "data\\dev.txt": "883570007db908ae61ae50b19fd251060104c45fd3382ac1ef00edf2f0016073",
+    "data\\label_mapping.txt": "d402d8aabf82ce83a63dbb1562e075a036fd6a8d9311cab07643de4f9cf635a5",
+    "data\\train.txt": "a6edd2d575d8fa0c563ff9cba01ec2f7cfd969f1c83ea55cbd305ee0dd134a71",
+    "models\\bert-base-chinese\\model.safetensors": "3404a1ffd8da507042e8161013ba2a4fc49858b4e3f8fbf5ce5724f94883aec3",
+    "checkpoints\\comment_classify\\model_best\\model.safetensors": "87791b05fc2c4f8101ac07c1a27838e1acc5e8ad5c049a17e3797fccda3360df"
+  }
+}

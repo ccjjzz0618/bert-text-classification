@@ -1,0 +1,8 @@
+test_bad_data_fails_loudly (test_project.DataTests.test_bad_data_fails_loudly) ... ok
+test_original_data (test_project.DataTests.test_original_data) ... ok
+test_saved_model_prediction (test_project.DataTests.test_saved_model_prediction) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 1.528s
+
+OK

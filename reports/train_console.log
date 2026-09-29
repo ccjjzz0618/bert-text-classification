@@ -1,0 +1,122 @@
+You are offline and the cache for model files in Transformers v4.22.0 has been updated while your local cache seems to be the one of a previous version. It is very likely that all your calls to any `from_pretrained()` method will fail. Remove the offline mode and enable internet connection to have your cache be updated automatically, then you can go back to offline mode.
+
+0it [00:00, ?it/s]
+0it [00:00, ?it/s]
+D:\bert-text-classification\.venv\Lib\site-packages\transformers\tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at D:\bert-text-classification\models\bert-base-chinese and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+{
+  "model": "D:\\bert-text-classification\\models\\bert-base-chinese",
+  "train_path": "D:\\bert-text-classification\\data\\train.txt",
+  "dev_path": "D:\\bert-text-classification\\data\\dev.txt",
+  "labels": "D:\\bert-text-classification\\data\\label_mapping.txt",
+  "output_dir": "D:\\bert-text-classification\\checkpoints\\comment_classify",
+  "report_dir": "D:\\bert-text-classification\\reports",
+  "epochs": 20,
+  "batch_size": 16,
+  "max_length": 128,
+  "learning_rate": 5e-05,
+  "weight_decay": 0.0,
+  "warmup_ratio": 0.06,
+  "seed": 42,
+  "device": "cuda:0",
+  "no_amp": false,
+  "torch": "2.5.1+cu121",
+  "transformers": "4.44.2",
+  "device_name": "NVIDIA GeForce RTX 2080 Ti",
+  "amp": true,
+  "train_samples": 402,
+  "dev_samples": 63,
+  "train_label_counts": {
+    "1": 78,
+    "7": 67,
+    "2": 67,
+    "5": 56,
+    "4": 70,
+    "0": 22,
+    "3": 29,
+    "6": 13
+  },
+  "dev_label_counts": {
+    "0": 2,
+    "1": 7,
+    "2": 12,
+    "3": 3,
+    "4": 16,
+    "5": 16,
+    "6": 1,
+    "7": 6
+  },
+  "text_overlap": 0,
+  "data_sha256": {
+    "D:\\bert-text-classification\\data\\train.txt": "a6edd2d575d8fa0c563ff9cba01ec2f7cfd969f1c83ea55cbd305ee0dd134a71",
+    "D:\\bert-text-classification\\data\\dev.txt": "883570007db908ae61ae50b19fd251060104c45fd3382ac1ef00edf2f0016073",
+    "D:\\bert-text-classification\\data\\label_mapping.txt": "d402d8aabf82ce83a63dbb1562e075a036fd6a8d9311cab07643de4f9cf635a5"
+  }
+}
+epoch 01/20, step 10/26, loss 2.1782
+epoch 01/20, step 20/26, loss 1.6288
+{"epoch": 1, "train_loss": 1.8804646202580846, "dev_loss": 1.152650819884406, "accuracy": 0.746031746031746, "macro_f1": 0.5925662878787878, "elapsed_seconds": 2.5669410000000425}
+Saved best checkpoint: epoch=1, macro_f1=0.592566
+epoch 02/20, step 10/26, loss 0.9816
+epoch 02/20, step 20/26, loss 0.4912
+{"epoch": 2, "train_loss": 0.9143280484783116, "dev_loss": 0.741635349061754, "accuracy": 0.7619047619047619, "macro_f1": 0.5800437110328002, "elapsed_seconds": 5.104979500000127}
+epoch 03/20, step 10/26, loss 0.4716
+epoch 03/20, step 20/26, loss 0.6745
+{"epoch": 3, "train_loss": 0.4334916451677161, "dev_loss": 0.6501901414659288, "accuracy": 0.7777777777777778, "macro_f1": 0.7343452380952381, "elapsed_seconds": 7.319733700000143}
+Saved best checkpoint: epoch=3, macro_f1=0.734345
+epoch 04/20, step 10/26, loss 0.3078
+epoch 04/20, step 20/26, loss 0.1315
+{"epoch": 4, "train_loss": 0.24210175471519357, "dev_loss": 0.3996011870247977, "accuracy": 0.8888888888888888, "macro_f1": 0.9220947063689, "elapsed_seconds": 9.822591000000102}
+Saved best checkpoint: epoch=4, macro_f1=0.922095
+epoch 05/20, step 10/26, loss 0.0279
+epoch 05/20, step 20/26, loss 0.0547
+{"epoch": 5, "train_loss": 0.09406852722167969, "dev_loss": 0.525438856510889, "accuracy": 0.8888888888888888, "macro_f1": 0.9208806818181818, "elapsed_seconds": 12.275309000000107}
+epoch 06/20, step 10/26, loss 0.0109
+epoch 06/20, step 20/26, loss 0.0147
+{"epoch": 6, "train_loss": 0.017584710571896377, "dev_loss": 0.6561511726606459, "accuracy": 0.8412698412698413, "macro_f1": 0.8860294117647058, "elapsed_seconds": 14.480378599999995}
+epoch 07/20, step 10/26, loss 0.0086
+epoch 07/20, step 20/26, loss 0.0057
+{"epoch": 7, "train_loss": 0.026389394826556913, "dev_loss": 0.4447160524035257, "accuracy": 0.9047619047619048, "macro_f1": 0.9314119983277591, "elapsed_seconds": 16.61735990000011}
+Saved best checkpoint: epoch=7, macro_f1=0.931412
+epoch 08/20, step 10/26, loss 0.0045
+epoch 08/20, step 20/26, loss 0.0040
+{"epoch": 8, "train_loss": 0.025429969996362184, "dev_loss": 0.6378769959722247, "accuracy": 0.8888888888888888, "macro_f1": 0.9170289855072464, "elapsed_seconds": 19.08993620000001}
+epoch 09/20, step 10/26, loss 0.0035
+epoch 09/20, step 20/26, loss 0.0030
+{"epoch": 9, "train_loss": 0.0034378108693592585, "dev_loss": 0.6662853814306713, "accuracy": 0.8888888888888888, "macro_f1": 0.9170289855072464, "elapsed_seconds": 21.23333680000019}
+epoch 10/20, step 10/26, loss 0.0025
+epoch 10/20, step 20/26, loss 0.0023
+{"epoch": 10, "train_loss": 0.0023264244421204523, "dev_loss": 0.5638644610132489, "accuracy": 0.9047619047619048, "macro_f1": 0.9268084066471163, "elapsed_seconds": 23.420224700000063}
+epoch 11/20, step 10/26, loss 0.0024
+epoch 11/20, step 20/26, loss 0.0018
+{"epoch": 11, "train_loss": 0.002006332672650541, "dev_loss": 0.6087052235527645, "accuracy": 0.8888888888888888, "macro_f1": 0.9170289855072464, "elapsed_seconds": 25.58767950000015}
+epoch 12/20, step 10/26, loss 0.0019
+epoch 12/20, step 20/26, loss 0.0014
+{"epoch": 12, "train_loss": 0.0017717121845454125, "dev_loss": 0.6210330128669739, "accuracy": 0.8888888888888888, "macro_f1": 0.9170289855072464, "elapsed_seconds": 27.74221220000004}
+epoch 13/20, step 10/26, loss 0.0018
+epoch 13/20, step 20/26, loss 0.0022
+{"epoch": 13, "train_loss": 0.0016100276168899157, "dev_loss": 0.6190565786664448, "accuracy": 0.8888888888888888, "macro_f1": 0.9170289855072464, "elapsed_seconds": 29.917008500000065}
+epoch 14/20, step 10/26, loss 0.0015
+epoch 14/20, step 20/26, loss 0.0014
+{"epoch": 14, "train_loss": 0.0015111289807220004, "dev_loss": 0.6236066903386798, "accuracy": 0.8888888888888888, "macro_f1": 0.9170289855072464, "elapsed_seconds": 32.07448400000021}
+epoch 15/20, step 10/26, loss 0.0015
+epoch 15/20, step 20/26, loss 0.0017
+{"epoch": 15, "train_loss": 0.001810800969897218, "dev_loss": 0.613341956857651, "accuracy": 0.8888888888888888, "macro_f1": 0.9170289855072464, "elapsed_seconds": 34.23655050000002}
+epoch 16/20, step 10/26, loss 0.0013
+epoch 16/20, step 20/26, loss 0.0013
+{"epoch": 16, "train_loss": 0.0013444364367432855, "dev_loss": 0.6101287092481341, "accuracy": 0.8888888888888888, "macro_f1": 0.9170289855072464, "elapsed_seconds": 36.450747800000045}
+epoch 17/20, step 10/26, loss 0.0011
+epoch 17/20, step 20/26, loss 0.0012
+{"epoch": 17, "train_loss": 0.001260004233365035, "dev_loss": 0.6127743266877674, "accuracy": 0.8888888888888888, "macro_f1": 0.9170289855072464, "elapsed_seconds": 38.628191100000095}
+epoch 18/20, step 10/26, loss 0.0011
+epoch 18/20, step 20/26, loss 0.0013
+{"epoch": 18, "train_loss": 0.0012502978690228058, "dev_loss": 0.6149916800241622, "accuracy": 0.8888888888888888, "macro_f1": 0.9170289855072464, "elapsed_seconds": 40.78535030000012}
+epoch 19/20, step 10/26, loss 0.0010
+epoch 19/20, step 20/26, loss 0.0012
+{"epoch": 19, "train_loss": 0.001190790489538392, "dev_loss": 0.6171462914300343, "accuracy": 0.8888888888888888, "macro_f1": 0.9170289855072464, "elapsed_seconds": 42.9513730000001}
+epoch 20/20, step 10/26, loss 0.0012
+epoch 20/20, step 20/26, loss 0.0012
+{"epoch": 20, "train_loss": 0.001164258416019269, "dev_loss": 0.6180006189951821, "accuracy": 0.8888888888888888, "macro_f1": 0.9170289855072464, "elapsed_seconds": 45.092256600000155}
+Training finished. Best model: D:\bert-text-classification\checkpoints\comment_classify\model_best

@@ -1,0 +1,49 @@
+{
+  "model": "D:\\bert-text-classification\\models\\bert-base-chinese",
+  "train_path": "D:\\bert-text-classification\\data\\train.txt",
+  "dev_path": "D:\\bert-text-classification\\data\\dev.txt",
+  "labels": "D:\\bert-text-classification\\data\\label_mapping.txt",
+  "output_dir": "D:\\bert-text-classification\\checkpoints\\comment_classify",
+  "report_dir": "D:\\bert-text-classification\\reports",
+  "epochs": 20,
+  "batch_size": 16,
+  "max_length": 128,
+  "learning_rate": 5e-05,
+  "weight_decay": 0.0,
+  "warmup_ratio": 0.06,
+  "seed": 42,
+  "device": "cuda:0",
+  "no_amp": false,
+  "torch": "2.5.1+cu121",
+  "transformers": "4.44.2",
+  "device_name": "NVIDIA GeForce RTX 2080 Ti",
+  "amp": true,
+  "train_samples": 402,
+  "dev_samples": 63,
+  "train_label_counts": {
+    "1": 78,
+    "7": 67,
+    "2": 67,
+    "5": 56,
+    "4": 70,
+    "0": 22,
+    "3": 29,
+    "6": 13
+  },
+  "dev_label_counts": {
+    "0": 2,
+    "1": 7,
+    "2": 12,
+    "3": 3,
+    "4": 16,
+    "5": 16,
+    "6": 1,
+    "7": 6
+  },
+  "text_overlap": 0,
+  "data_sha256": {
+    "D:\\bert-text-classification\\data\\train.txt": "a6edd2d575d8fa0c563ff9cba01ec2f7cfd969f1c83ea55cbd305ee0dd134a71",
+    "D:\\bert-text-classification\\data\\dev.txt": "883570007db908ae61ae50b19fd251060104c45fd3382ac1ef00edf2f0016073",
+    "D:\\bert-text-classification\\data\\label_mapping.txt": "d402d8aabf82ce83a63dbb1562e075a036fd6a8d9311cab07643de4f9cf635a5"
+  }
+}
